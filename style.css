@@ -1,0 +1,120 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #33ab9d;
+}
+
+.container {
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background-color: rgb(237, 250, 191);
+}
+
+header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container form {
+    margin: 35px 0 20px;
+}
+
+form .row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column
+}
+
+form .row label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form .row:nth-child(2) label{
+  font-size: 17px;
+}
+
+form :where(textarea, select, button) {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .row textarea {
+    border: 1px solid rgb(218, 239, 165);
+    resize: none;
+    height: 110px;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+form .row textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+form .row textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+form .row .outer {
+    height: 47px;
+    display: flex;
+    padding: 0 10px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 5px;
+    align-items: center;
+}
+
+form .row select {
+    font-size: 14px;
+    background: rgb(242, 248, 223);
+}
+
+form .row select::-webkit-scrollbar {
+    width: 8px;
+}
+
+form .row select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+form .row select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+form button {
+    height: 52px;
+    margin-top: 10px;
+    background-color: rgb(51, 147, 147);
+    font-size: 17px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #233a38;
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        max-width: 345px;
+        width: 100%;
+    }
+}
